@@ -1,42 +1,56 @@
-package com.anudip.labtwo;
+/* 
+   Question: Write a Java program to create a base class Sports with a method called play(). 
+             Create three subclasses: Football, Basketball, and Rugby. Override the play() 
+             method in each subclass to play a specific statement for each sport 
+*/
 
+// defining the base class Sports
 class Sports {
- public void play() {
-     System.out.println("Playing a sport");
- }
+    // Method to play a generic sport
+    public void play() {
+        System.out.println("Playing a sport");
+    }
 }
 
+// subclass Football extending the Sports class
 class Football extends Sports {
- @Override
- public void play() {
-     System.out.println("Playing Football");
- }
+    // overriding the play() method to play football
+    @Override
+    public void play() {
+        System.out.println("Playing Football");
+    }
 }
 
+// subclass Basketball extending the Sports class
 class Basketball extends Sports {
- @Override
- public void play() {
-     System.out.println("Playing Basketball");
- }
+    // overriding the play() method to play basketball
+    @Override
+    public void play() {
+        System.out.println("Playing Basketball");
+    }
 }
 
+// subclass Rugby extending the Sports class
 class Rugby extends Sports {
- @Override
- public void play() {
-     System.out.println("Playing Rugby");
- }
+    // overriding the play() method to play rugby
+    @Override
+    public void play() {
+        System.out.println("Playing Rugby");
+    }
 }
 
+// main class to test the Sports and its subclasses
 public class SportsTest {
- public static void main(String[] args) {
+    // main method where the program execution starts
+    public static void main(String[] args) {
+        // creating objects of each subclass
+        Sports football = new Football();
+        Sports basketball = new Basketball();
+        Sports rugby = new Rugby();
 
-     Sports football = new Football();
-     Sports basketball = new Basketball();
-     Sports rugby = new Rugby();
-
-     football.play();
-     basketball.play();
-     rugby.play();
- }
+        // calling the play() method for each sport
+        football.play();
+        basketball.play();
+        rugby.play();
+    }
 }
-
