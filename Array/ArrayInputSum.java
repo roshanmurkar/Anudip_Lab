@@ -1,7 +1,7 @@
 package com.anudip.labtwo;
 import java.util.Scanner;
 
-public class ArrayInput {
+public class ArrayInputSum {
     // Function to calculate the sum of array elements
     public static int sumArray(int num) {
     	Scanner scanner = new Scanner(System.in);
