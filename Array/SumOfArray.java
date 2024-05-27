@@ -15,7 +15,7 @@ class SumOfArray {
         int n = scanner.nextInt();
         
         // access the sumArray method from ArrayInput class, It will return sum of array
-        int sum = ArrayInput.sumArray(n);
+        int sum = ArrayInputSum.sumArray(n);
         
         // print the sum
         System.out.println("The sum of the array values is: " + sum);
