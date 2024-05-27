@@ -13,7 +13,7 @@ class AvgOfArray {
         int n = scanner.nextInt();
 		
         // access the sumArray method from ArrayInput class, It will return sum of array
-        int sum = ArrayInput.sumArray(n);
+        int sum = ArrayInputSum.sumArray(n);
         
 		// calculate the average
 		double average = (double) sum / n;
